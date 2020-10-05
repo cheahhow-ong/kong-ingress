@@ -1,0 +1,8 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: request-transformer-biometric-grant
+config:
+  replace:
+    uri: "/anything/v1/auth/biometric/verification"
+plugin: request-transformer

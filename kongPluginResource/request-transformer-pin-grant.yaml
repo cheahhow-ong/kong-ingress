@@ -1,0 +1,8 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: request-transformer-pin-grant
+config:
+  replace:
+    uri: "/anything/v1/auth/pin/verification"
+plugin: request-transformer
