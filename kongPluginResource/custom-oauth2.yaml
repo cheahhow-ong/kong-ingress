@@ -1,0 +1,21 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: custom-oauth2
+  annotations:
+    kubernetes.io/ingress.class: "arief-test"
+config:
+  auth_header_name: "Authorization"
+  enable_client_credentials: true
+  enable_password_grant: true
+  global_credentials: true
+  refresh_token_ttl: 300
+  scopes:
+  - firstTimeLogin
+  - login
+  - biometric
+  - authenticated
+  - pin
+  - prelogin
+  token_expiration: 60
+plugin: custom-oauth2

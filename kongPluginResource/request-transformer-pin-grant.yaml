@@ -4,5 +4,5 @@ metadata:
   name: request-transformer-pin-grant
 config:
   replace:
-    uri: "/anything/v1/auth/pin/verification"
+    uri: "/v1/auth/pin/verification"
 plugin: request-transformer

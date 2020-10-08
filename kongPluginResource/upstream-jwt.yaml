@@ -1,0 +1,7 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: upstream-jwt
+config:
+  header: "Authorization"
+plugin: "upstream-jwt"

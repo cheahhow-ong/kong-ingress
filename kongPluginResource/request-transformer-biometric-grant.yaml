@@ -4,5 +4,5 @@ metadata:
   name: request-transformer-biometric-grant
 config:
   replace:
-    uri: "/anything/v1/auth/biometric/verification"
+    uri: "/v1/auth/biometric/verification"
 plugin: request-transformer
