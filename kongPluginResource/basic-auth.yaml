@@ -2,4 +2,6 @@ apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
   name: basic-auth
+  annotations:
+    kubernetes.io/ingress.class: "arief-test"
 plugin: basic-auth
