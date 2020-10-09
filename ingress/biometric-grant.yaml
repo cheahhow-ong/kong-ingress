@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: biometric-grant
   annotations:
-    konghq.com/plugins: basic-auth, request-transformer-biometric-grant
+    konghq.com/plugins: basic-auth, request-transformer-biometric-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
     kubernetes.io/ingress.class: "arief-test"
 spec:
@@ -11,6 +11,6 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: httpbin
-          servicePort: 80
+          serviceName: localization
+          servicePort: 8080
         path: /v1/biometric/grant
