@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: test
   annotations:
-    konghq.com/plugins: upstream-jwt
+    konghq.com/plugins: basic-auth, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
     kubernetes.io/ingress.class: "arief-test"
 spec:
