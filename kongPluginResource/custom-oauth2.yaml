@@ -9,13 +9,14 @@ config:
   enable_client_credentials: true
   enable_password_grant: true
   global_credentials: true
-  refresh_token_ttl: 300
+  refresh_token_ttl: 1800
   scopes:
-  - firstTimeLogin
+  - firstTime
   - login
   - biometric
   - authenticated
   - pin
   - prelogin
-  token_expiration: 60
+  token_expiration: 600
+  provision_key: "0123456789"
 plugin: custom-oauth2
