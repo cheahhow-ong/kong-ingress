@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: password-grant
+  name: prelogin-grant
   annotations:
-    konghq.com/plugins: request-transformer-password-grant, upstream-jwt, custom-oauth2, custom-response-transformer, session
+    konghq.com/plugins: basic-auth, request-transformer-prelogin-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
     kubernetes.io/ingress.class: "arief-test"
 spec:
@@ -13,4 +13,4 @@ spec:
       - backend:
           serviceName: localization
           servicePort: 8080
-        path: /v1/password/grant
+        path: /v1/prelogin/grant

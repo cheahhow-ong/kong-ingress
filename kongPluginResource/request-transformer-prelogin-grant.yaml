@@ -1,10 +1,10 @@
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
-  name: request-transformer-password-grant
+  name: request-transformer-prelogin-grant
   annotations:
     kubernetes.io/ingress.class: "arief-test"
 config:
   replace:
-    uri: "/v1/auth/mfa/verification"
+    uri: "/v1/profile/preload"
 plugin: request-transformer

@@ -17,6 +17,7 @@ config:
   - authenticated
   - pin
   - prelogin
+  - password
   token_expiration: 600
   provision_key: "0123456789"
 plugin: custom-oauth2

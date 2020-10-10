@@ -1,0 +1,10 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: session
+config: 
+  secret: opensesame
+  cookie_lifetime: 60
+  cookie_idletime: 10
+  storage: kong
+plugin: session
