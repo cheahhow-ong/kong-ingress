@@ -1,7 +1,9 @@
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
-  name: session
+  name: custom-session
+  annotations:
+    kubernetes.io/ingress.class: "arief-test"
 config: 
   secret: opensesame
   cookie_lifetime: 60
