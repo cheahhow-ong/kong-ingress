@@ -20,4 +20,6 @@ config:
   - password
   token_expiration: 600
   provision_key: "0123456789"
+  client_id: "admin"
+  client_secret: "password"
 plugin: custom-oauth2
