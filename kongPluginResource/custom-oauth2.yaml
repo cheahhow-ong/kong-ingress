@@ -3,7 +3,7 @@ kind: KongPlugin
 metadata:
   name: custom-oauth2
   annotations:
-    kubernetes.io/ingress.class: "arief-test"
+    kubernetes.io/ingress.class: "kcorp"
 config:
   auth_header_name: "Authorization"
   enable_client_credentials: true

@@ -5,7 +5,7 @@ metadata:
   annotations:
     konghq.com/plugins: basic-auth, request-transformer-biometric-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
-    kubernetes.io/ingress.class: "arief-test"
+    kubernetes.io/ingress.class: "kcorp"
 spec:
   rules:
   - http:

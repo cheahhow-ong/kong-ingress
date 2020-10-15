@@ -3,7 +3,7 @@ kind: KongPlugin
 metadata:
   name: upstream-jwt
   annotations:
-    kubernetes.io/ingress.class: "arief-test"
+    kubernetes.io/ingress.class: "kcorp"
 config:
   header: "Authorization"
 plugin: "upstream-jwt"
