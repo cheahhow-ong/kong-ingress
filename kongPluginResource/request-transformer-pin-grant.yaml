@@ -6,5 +6,5 @@ metadata:
     kubernetes.io/ingress.class: "kong"
 config:
   replace:
-    uri: "/v1/auth/pin/verification"
+    uri: "/v1/v1/auth/mfa/verification" # "/v1/auth/pin/verification"
 plugin: request-transformer

@@ -11,6 +11,6 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: localization
+          serviceName: push-notification
           servicePort: 8080
         path: /v1/prelogin/grant

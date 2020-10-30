@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: biometric-grant
   annotations:
-    konghq.com/plugins: basic-auth, request-transformer-biometric-grant, upstream-jwt, custom-oauth2, custom-response-transformer
+    konghq.com/plugins: request-transformer-biometric-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
     kubernetes.io/ingress.class: "kong"
 spec:

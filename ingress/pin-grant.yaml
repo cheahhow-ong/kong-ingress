@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: pin-grant
   annotations:
-    konghq.com/plugins: basic-auth
+    konghq.com/plugins: request-transformer-pin-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
     kubernetes.io/ingress.class: "kong"
 spec:
@@ -11,6 +11,6 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: httpbin
+          serviceName: localization
           servicePort: 80
         path: /v1/pin/grant
