@@ -5,12 +5,12 @@ metadata:
   annotations:
     konghq.com/plugins: basic-auth, request-transformer-prelogin-grant, upstream-jwt, custom-oauth2, custom-response-transformer
     konghq.com/strip-path: "true"
-    kubernetes.io/ingress.class: "kcorp"
+    kubernetes.io/ingress.class: "kong"
 spec:
   rules:
   - http:
       paths:
       - backend:
-          serviceName: kcorp-demo
+          serviceName: localization
           servicePort: 8080
         path: /v1/prelogin/grant

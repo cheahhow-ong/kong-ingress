@@ -3,5 +3,5 @@ kind: KongPlugin
 metadata:
   name: basic-auth
   annotations:
-    kubernetes.io/ingress.class: "kcorp"
+    kubernetes.io/ingress.class: "kong"
 plugin: basic-auth

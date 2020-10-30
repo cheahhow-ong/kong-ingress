@@ -3,5 +3,5 @@ kind: KongPlugin
 metadata:
   name: custom-response-transformer
   annotations:
-    kubernetes.io/ingress.class: "kcorp"
+    kubernetes.io/ingress.class: "kong"
 plugin: custom-response-transformer

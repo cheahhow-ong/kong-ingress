@@ -1,16 +1,15 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: test
+  name: subsequent
   annotations:
-    konghq.com/plugins: basic-auth, upstream-jwt, custom-oauth2, custom-response-transformer
-    konghq.com/strip-path: "true"
-    kubernetes.io/ingress.class: "kcorp"
+    konghq.com/plugins: custom-oauth2, kong-upstream-jwt
+    kubernetes.io/ingress.class: "kong"
 spec:
   rules:
   - http:
       paths:
       - backend:
-          serviceName: httpbin
-          servicePort: 80
-        path: /test
+          serviceName: push-notification
+          servicePort: 8080
+        path: /subsequent

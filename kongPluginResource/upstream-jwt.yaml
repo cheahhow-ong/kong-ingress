@@ -3,7 +3,7 @@ kind: KongPlugin
 metadata:
   name: upstream-jwt
   annotations:
-    kubernetes.io/ingress.class: "kcorp"
+    kubernetes.io/ingress.class: "kong"
 config:
   header: "Authorization"
 plugin: "upstream-jwt"

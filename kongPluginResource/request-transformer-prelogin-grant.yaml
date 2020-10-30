@@ -3,8 +3,8 @@ kind: KongPlugin
 metadata:
   name: request-transformer-prelogin-grant
   annotations:
-    kubernetes.io/ingress.class: "kcorp"
+    kubernetes.io/ingress.class: "kong"
 config:
   replace:
-    uri: "/v1/profile/preload"
+    uri: "/v1/store" # "/v1/profile/preload"
 plugin: request-transformer
