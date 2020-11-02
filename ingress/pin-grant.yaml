@@ -12,5 +12,5 @@ spec:
       paths:
       - backend:
           serviceName: localization
-          servicePort: 80
+          servicePort: 8080
         path: /v1/pin/grant
